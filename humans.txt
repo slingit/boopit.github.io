@@ -3,11 +3,10 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    Jamie Hoyle - Android/Web Developer - @mightyshakerjnr
+    Ross Penman - Server-side Developer - @penmanross
+    Daniel Tomlinson - iOS/Mac Developer - @dantoml
+    Alan Doherty - Windows Developer - @theframeworkguy
 
 # TECHNOLOGY COLOPHON
 
