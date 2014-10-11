@@ -1,0 +1,262 @@
+body {
+  background: url(../img/bcgb.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family:"proxima-nova", 'Avenir Next', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+
+/* general */
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+header {
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100px;
+}
+
+#mainNav, #mainNav li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  list-style: none;
+  line-height: 87px;
+}
+
+#mainNav li a {
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 10px;
+  color: #8e44ad;
+}
+
+#branding {
+  color: #9b59b6;
+  font-weight: 400;
+}
+
+#branding img {
+  height: 44px;
+  margin-right: 10px;
+  position:relative;
+  top:-4px;
+}
+
+/* content */
+.videoh {
+  display: none;
+  margin-bottom: 10px;
+}
+
+.whiteout {
+  background: #fff;
+}
+
+#mainView {
+  text-align: center;
+}
+
+#mainView #email {
+
+}
+
+.description {
+  font-weight: 400;
+  font-size: 32px;
+  color: #813a9d;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 1.6em;
+}
+
+.description b {
+  color: #6f1f8e;
+  font-weight: 600;
+}
+
+/* email update thing */
+
+.textInput {
+    width: 50%;
+    background:transparent;
+    font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif;
+    border: 0px;
+    margin: 12px;
+    font-size: 42px;
+    font-weight: 400;
+    color: #fff;
+    /* fancy border stuff
+    border-bottom: 2px dotted transparent;
+    */
+    border: 2px solid #fff;
+    padding: 5px;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+/* placeholder styling for every. sodding. browser */
+
+.textInput::-webkit-input-placeholder{
+    color:#fff;
+    text-align: center;
+}
+
+.textInput:-moz-placeholder{
+    color:#fff;
+    text-align: center;
+}
+
+.textInput::-moz-placeholder{
+    color:#fff;
+    text-align: center;
+}
+
+.textInput:-ms-input-placeholder{
+    color:#fff;
+    text-align: center;
+}
+
+/* and repeat for :focus, because CSS is stupid */
+.textInput:focus::-webkit-input-placeholder{
+    color:#fff;
+}
+
+.textInput:focus:-moz-placeholder{
+    color:#fff;
+}
+
+.textInput:focus::-moz-placeholder{
+    color:#fff;
+}
+
+.textInput:focus:-ms-input-placeholder{
+    color:#fff;
+}
+
+.textInput:focus{
+    color: #fff;
+    /* fancy border stuff */
+    border: 2px dotted #fff;
+    outline: none;
+}
+
+/* submit button */
+#submitEmail {
+  color: #fff;
+  background: #000;
+  padding: 12px 20px;
+  padding-bottom: 9px;
+  /*font-family: 'Avenir Next', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;*/
+  text-decoration: none;
+  font-size: 38px;
+  outline: none;
+  border: 2px solid #000;
+}
+
+#submitEmail:hover {
+  background: #222;
+}
+
+/* footer */
+footer p {
+  text-align: center;
+  color: #fff;
+  padding-top: 15px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+footer p a {
+  color: #fff;
+}
+
+/* deal with funky fonts on smaller screens */
+@media (max-width: 800px) {
+  body {
+    background: #fff;
+  }
+  .description {
+    font-size: 18px;
+  }
+
+  .textInput {
+    width: 80%;
+    font-size: 18px;
+    border: 2px solid #000;
+    color: #000;
+  }
+  /* placeholder styling for every. sodding. browser */
+
+  .textInput::-webkit-input-placeholder{
+      color:#000;
+      text-align: center;
+  }
+
+  .textInput:-moz-placeholder{
+      color:#000;
+      text-align: center;
+  }
+
+  .textInput::-moz-placeholder{
+      color:#000;
+      text-align: center;
+  }
+
+  .textInput:-ms-input-placeholder{
+      color:#000;
+      text-align: center;
+  }
+
+  /* and repeat for :focus, because CSS is stupid */
+  .textInput:focus::-webkit-input-placeholder{
+      color:#000;
+  }
+
+  .textInput:focus:-moz-placeholder{
+      color:#000;
+  }
+
+  .textInput:focus::-moz-placeholder{
+      color:#000;
+  }
+
+  .textInput:focus:-ms-input-placeholder{
+      color:#000;
+  }
+
+  .textInput:focus{
+      color: #000;
+      /* fancy border stuff */
+      border: 2px dotted #000;
+      outline: none;
+  }
+
+  #submitEmail {
+    clear: both;
+    font-size: 18px;
+  }
+
+  footer p {
+    color: #000;
+    font-size: 18px;
+  }
+
+  footer p a {
+    color: #000;
+  }
+}
