@@ -1,5 +1,5 @@
 body {
-  background: url(../img/bcgb.jpg) no-repeat center center fixed;
+  background: #fff;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -90,18 +90,15 @@ header {
 /* email update thing */
 
 .textInput {
+    font-family:"proxima-nova", 'Avenir Next', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
     width: 50%;
     background:transparent;
-    font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif;
     border: 0px;
     margin: 12px;
     font-size: 42px;
     font-weight: 400;
-    color: #fff;
-    /* fancy border stuff
-    border-bottom: 2px dotted transparent;
-    */
-    border: 2px solid #fff;
+    color: #000;
+    border: 2px solid #000;
     padding: 5px;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
@@ -112,60 +109,60 @@ header {
 /* placeholder styling for every. sodding. browser */
 
 .textInput::-webkit-input-placeholder{
-    color:#fff;
+    color:#000;
     text-align: center;
 }
 
 .textInput:-moz-placeholder{
-    color:#fff;
+    color:#000;
     text-align: center;
 }
 
 .textInput::-moz-placeholder{
-    color:#fff;
+    color:#000;
     text-align: center;
 }
 
 .textInput:-ms-input-placeholder{
-    color:#fff;
+    color:#000;
     text-align: center;
 }
 
 /* and repeat for :focus, because CSS is stupid */
 .textInput:focus::-webkit-input-placeholder{
-    color:#fff;
+    color:#000;
 }
 
 .textInput:focus:-moz-placeholder{
-    color:#fff;
+    color:#000;
 }
 
 .textInput:focus::-moz-placeholder{
-    color:#fff;
+    color:#000;
 }
 
 .textInput:focus:-ms-input-placeholder{
-    color:#fff;
+    color:#000;
 }
 
 .textInput:focus{
-    color: #fff;
+    color: #000;
     /* fancy border stuff */
-    border: 2px dotted #fff;
+    border: 2px dotted #000;
     outline: none;
 }
 
 /* submit button */
 #submitEmail {
+  background:#000;
+  border: 0px;
+  margin: 10px;
+  font-size: 42px;
+  font-weight: 400;
   color: #fff;
-  background: #000;
-  padding: 13px 20px;
-  padding-bottom: 8px;
-  /*font-family: 'Avenir Next', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;*/
-  text-decoration: none;
-  font-size: 38px;
-  outline: none;
-  border: 2px solid #000;
+  padding: 7px 20px;
+  text-align: center;
+  margin-bottom: 22px;
 }
 
 #submitEmail:hover {
@@ -175,21 +172,18 @@ header {
 /* footer */
 footer p {
   text-align: center;
-  color: #fff;
+  color: #000;
   padding-top: 15px;
   font-size: 22px;
   font-weight: 400;
 }
 
 footer p a {
-  color: #fff;
+  color: #222;
 }
 
 /* deal with funky fonts on smaller screens */
 @media (max-width: 800px) {
-  body {
-    background: #fff;
-  }
   .description {
     font-size: 18px;
   }
@@ -197,66 +191,10 @@ footer p a {
   .textInput {
     width: 80%;
     font-size: 18px;
-    border: 2px solid #000;
-    color: #000;
-  }
-  /* placeholder styling for every. sodding. browser */
-
-  .textInput::-webkit-input-placeholder{
-      color:#000;
-      text-align: center;
-  }
-
-  .textInput:-moz-placeholder{
-      color:#000;
-      text-align: center;
-  }
-
-  .textInput::-moz-placeholder{
-      color:#000;
-      text-align: center;
-  }
-
-  .textInput:-ms-input-placeholder{
-      color:#000;
-      text-align: center;
-  }
-
-  /* and repeat for :focus, because CSS is stupid */
-  .textInput:focus::-webkit-input-placeholder{
-      color:#000;
-  }
-
-  .textInput:focus:-moz-placeholder{
-      color:#000;
-  }
-
-  .textInput:focus::-moz-placeholder{
-      color:#000;
-  }
-
-  .textInput:focus:-ms-input-placeholder{
-      color:#000;
-  }
-
-  .textInput:focus{
-      color: #000;
-      /* fancy border stuff */
-      border: 2px dotted #000;
-      outline: none;
   }
 
   #submitEmail {
     clear: both;
     font-size: 18px;
-  }
-
-  footer p {
-    color: #000;
-    font-size: 18px;
-  }
-
-  footer p a {
-    color: #000;
   }
 }
